@@ -4,17 +4,17 @@
 from instabot_py import InstaBot
 
 bot = InstaBot(
-    login="username",  # Enter username (lowercase). Do not enter email!
-    password="password",
+    login="xx",  # Enter username (lowercase). Do not enter email!
+    password="xx",
     like_per_day=1000,
-    comments_per_day=0,
-    tag_list=["follow4follow", "f4f", "cute", "l:212999109"],
+    comments_per_day=553,
+    tag_list=["mountainbike", "mountain", "ski", "bike", "sick", "sickserias", "wibmer", "fabiowibmer", "mtb", "downhill", "dh", "specialized", "enduromtb", "endurobike", "poc", "fiveten", "skitour", "snow", "travel", "travellove"],
     tag_blacklist=["rain", "thunderstorm"],
     user_blacklist={},
     max_like_for_one_tag=50,
-    follow_per_day=300,
-    follow_time=1 * 60 * 60,
-    unfollow_per_day=300,
+    follow_per_day=1000,
+    follow_time=1 * 60 * 10,
+    unfollow_per_day=900,
     unlike_per_day=0,
     unfollow_recent_feed=True,
     # If True, the bot will also unfollow people who dont follow you using the recent feed. Default: True
@@ -24,7 +24,7 @@ bot = InstaBot(
     user_max_follow=0,
     # session_file=False, # Set to False to disable persistent session, or specify custom session_file (ie ='myusername.session')
     user_min_follow=0,
-    log_mod=0,
+    log_mod=1,
     proxy="",
     # List of list of words, each of which will be used to generate comment
     # For example: "This shot feels wow!"

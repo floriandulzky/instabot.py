@@ -1,10 +1,11 @@
-FROM python:3
+FROM python:3.7
 
 WORKDIR /app
 
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
-
 COPY . .
+
+RUN pip3.7 install --no-cache-dir -r ./requirements/base.txt
+RUN pip3.7 install --no-cache-dir -r ./requirements/ci.txt
+RUN pip3.7 install --no-cache-dir -r ./requirements/tests.txt
 
 CMD [ "python", "example.py" ]
